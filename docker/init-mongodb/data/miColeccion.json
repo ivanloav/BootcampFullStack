@@ -1,0 +1,5 @@
+[{"_id": {"$oid": "654ec70bca83c1d1dd51d95f"},"nombre": "Iván","valor": "Inserción de prueba"},
+{"_id": {"$oid": "654ec7e1ca83c1d1dd51d960"},"nombre": "Test1","valor": "Inserción de prueba1"},
+{"_id": {"$oid": "654ec7eaca83c1d1dd51d961"},"nombre": "Test2","valor": "Inserción de prueba2"},
+{"_id": {"$oid": "654ec7f2ca83c1d1dd51d962"},"nombre": "Test3","valor": "Inserción de prueba3"},
+{"_id": {"$oid": "654ec7faca83c1d1dd51d963"},"nombre": "Test4","valor": "Inserción de prueba4"}]
