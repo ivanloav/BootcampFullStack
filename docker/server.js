@@ -29,8 +29,8 @@ Your implementation here
 // // Connect to mongodb server
 const MongoClient = require('mongodb').MongoClient;
 // /* Your url connection to mongodb container */
-const url = 'mongodb://localhost:27017/TestBootcamp';
-// const url = 'mongodb://mongodb:27017/TestBootcamp';
+// const url = 'mongodb://localhost:27017/TestBootcamp';
+const url = 'mongodb://mongodb:27017/TestBootcamp';
 const dbName = 'TestBootcamp';
 const client = new MongoClient(url);
 
