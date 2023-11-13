@@ -21,7 +21,7 @@ Para obtener una copia del proyecto operativa sigue estos pasos:
 
 ```bash
 git clone https://github.com/ivanloav/BootcampFullStack.git
-cd BootcampFullStack
+cd BootcampFullStack/docker/
 ```
 
 2. **Construir y Ejecutar con Docker Compose:**
