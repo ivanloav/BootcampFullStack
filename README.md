@@ -27,7 +27,7 @@ cd BootcampFullStack
 2. **Construir y Ejecutar con Docker Compose:**
 
 ```bash
-    docker-compose up --build
+docker-compose up --build
 ```
 
     Este comando construirá la imagen de Docker para la aplicación Node.js y también iniciará un contenedor de MongoDB. La opción `--build` es necesaria solo la primera vez que ejecutas la aplicación o cuando haces cambios en el `Dockerfile`.
