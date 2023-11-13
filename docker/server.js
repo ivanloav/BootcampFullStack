@@ -41,20 +41,20 @@ client.connect()
         console.log('Conectado a MongoDB');
         const db = client.db(dbName);
 
-        app.get('/miColeccion', async (req, res) => {
+        app.get('/api/get/all', async (req, res) => {
             const collection = db.collection('miColeccion');
             const documentos = await collection.find({}).toArray();
             res.status(200).json(documentos);
         });
 
-        app.get('/miColeccion/query', async (req, res) => {
+        app.get('/api/get/query', async (req, res) => {
             const query = req.query;
             const collection = db.collection('miColeccion');
             const documents = await collection.find(query).toArray();
             res.status(200).json(documents);
         });
 
-        app.put('/miColeccion', async (req, res) => {
+        app.put('/api/put', async (req, res) => {
             const filter = { nombre: req.body.nombreAntiguo };
             const update = {
                 $set: {
@@ -71,7 +71,7 @@ client.connect()
             }
         });
 
-        app.delete('/miColeccion/:nombre', async (req, res) => {
+        app.delete('/api/delete/:nombre', async (req, res) => {
             const nombreParaEliminar = req.params.nombre;
             const collection = db.collection('miColeccion');
             const result = await collection.deleteOne({ nombre: nombreParaEliminar });
